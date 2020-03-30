@@ -62,20 +62,23 @@
 	padding: 0;
 }
 .nav__vertical{
-	padding: 0;
-	left: 0;
-	background: url(../img/svg/bg.svg);
-	background-size: cover;
-	height: 100vh;
-	position: fixed;
-	padding-top: 120px;
+	z-index: 96;
+	text-align: center;
+	transition: 1s;
+	font-size: 40px;
+	transform: translateX(0);
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
-	font-size: 14px;
-	transform: translateX(-100%);
-	overflow: hidden;
-	transition: 1s;
+	height: 100vh;
+	background: url(../img/svg/bg.svg);
+	background-size: cover;
+	position: fixed;
+	padding: 0;
+	left: 0;
 	@media (min-width:576px ) {
+		text-align: left;
+		padding-top: 120px;
+		font-size: 15px;
 		transform: translateX(0);
 	}
 
@@ -89,18 +92,14 @@
 				background-color: @mint;
 			}
 		}
+
+	@media (max-height: 425px) {
+			padding-top: 45px;
+		}	
 		
 }
 
-.nav__vertical--vis{
-	z-index: 96;
-	padding-top: 88px;
-	text-align: center;
-	transform: translateX(0);
-	transition: 1s;
-	font-size: 40px;
 
-}
 
 
 
@@ -109,19 +108,26 @@
 }
 
 .nav__vertical--ul{
+	padding-top: 85px;
 	border-top: 3px solid @mint;
 	border-bottom: 3px solid @mint;
 	background-color: rgba(27,9,9,0.9);
-			position: relative;
-			top: -3px;
+	position: relative;
+	top: -3px;
+		li{
+			max-width: 100%;
+		}
 		li:first-child{
-			padding-left: 90vw;
+			padding-left: 80vw;
 		}
 		li:nth-child(2){
 			padding-top: @paddingtop;
 		}
 		li:last-child{
 			padding-bottom:@paddingtop;
+		}
+		@media (min-width: 576px) {
+			padding-top: 0;
 		}
 }
 
@@ -156,6 +162,9 @@
 
 .content__img-padding{
 	padding: 20px;
+
+	
+	
 }
 
 .content__product{
@@ -168,8 +177,14 @@
 		font-size: 34px;
 	}
 }
+
+.content__product--item{
+	padding-top: 40px;
+}
+
+
 .contnt__product-animation{
-	padding-top: 50px;
+	padding-top: 10px;
 }
 
 h4{
@@ -177,13 +192,15 @@ h4{
 }
 
 .contnt__product-animation a:before{
-	content: 'заказать';
+	content: 'узнать больше';
+	line-height: 20px;
 		position: absolute;
+		font-family: 'Oswald', sans-serif; 
 		background-color: transparent;
 		color: transparent;
-		width: 80px;
-		height: 40px;
-		border-radius: 3px;
+		width: 70px;
+		
+		border-radius: 16px;
 		
 		z-index: 9;
 
@@ -192,16 +209,23 @@ h4{
 
 .contnt__product-animation a:hover::before {
 		transition: 1s;
-		background-color: red;
+		background-color: rgba(130,195,191,0.8);
 		color: #000;
 		text-align: center;
-		transform: translate(90px,90px);
+		
+		
+		@media (min-width: 1140px) {
+			transform: translate(130%,240%);
+		}
 	
 }
 
 .product__img{
 	border-radius: 200px;
+
 }
+
+
 
 .contnt__product-animation a{
 	
@@ -226,6 +250,8 @@ h4{
 			font-size: 34px;
 		}
 }
+
+
 
 .content_work--bg{
 	background-color: rgba(24,24,24,0.4);
@@ -253,4 +279,201 @@ h4{
 			font-size: 24px;
 		}
 	}
+}
+
+
+//visibl
+
+
+.visibl{
+	display: block!important;
+}
+
+
+//
+
+//tort
+
+
+.tort{
+	padding-top: 116px;
+	display: none;
+	
+}
+
+.card__all{
+	background-color: @ligth;
+}
+
+.card__item{
+	h4{
+		font-size: 40px;
+	}
+}
+
+.card__img{
+	padding: 40px;
+	position: relative;
+	overflow: hidden;
+	
+	
+	
 }	
+
+.card__img-item1{
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	&:after{
+		content: '«Пра́га» — шоколадный торт, широко известный в России со времён СССР.Состоит из трёх бисквитных коржей с двумя слоями крема «Пражский». Верхняя и боковые поверхности покрыты повидлом и заглазированы помадкой (либо боковые поверхности отделаны кремом и бисквитной крошкой). Сверху украшен рисунком из крема';
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		transform: translateX(100%);
+		background-color:rgba(251,230,230,0.6); ;
+		transition: 1s;
+		text-align: center;
+
+	}
+
+
+	img{
+		width: 100%;
+		box-shadow: 0px 0px 10px 2px @dark;	
+	}
+}
+
+.card__img-item1:hover::after{
+	transform: translateX(-100%);
+}
+
+
+.card__img-item2{
+	.card__img-item1();
+	&:after{
+		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ea voluptates provident temporibus accusantium quidem magnam beatae soluta asperiores facere.'
+	}
+}
+
+.card__img-item2:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item3{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item3:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item4{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item4:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item4{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item4:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item5{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item5:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item6{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item6:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item7{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item7:hover::after{
+	transform: translateX(-100%);
+}
+
+.card__img-item8{
+	.card__img-item1();
+	&:after{
+		content: 'Что делал слон когда пришел на поле он'
+	}
+}
+
+.card__img-item8:hover::after{
+	transform: translateX(-100%);
+}
+
+
+//cake
+.cake{
+	padding-top: 116px;
+	display: none;
+}
+
+
+//pie
+.pie{
+	padding-top: 116px;
+	display: none;
+}
+
+//map
+
+.map{
+	padding-top: 116px;
+}
+
+.bg_cont--img{
+	background: url(../img/bg/bgcont.jpg);
+	background-size: cover;
+	padding: 0;
+}
+
+.bg_cont--color{
+	background-color: @dark;
+	padding: 40px 0 40px 0;
+}
+
+.hr{
+	width: 80%;
+	color: @mint;
+	background-color: @mint;;
+	height: 2px;
+}
+
+.mb-0{
+	color: @ligth;
+}
