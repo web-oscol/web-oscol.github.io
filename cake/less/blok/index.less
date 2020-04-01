@@ -16,11 +16,15 @@
 			font-size: 40px;
 		}
 
+		@media (max-height: 500px) {
+		font-size: 20px;
+	}
+
 	}
 	&:hover{
 		color: #fff;
 	}
-
+	
 }
 
 .bg-brand{
@@ -33,6 +37,9 @@
 	z-index: 98;
 	@media (min-width: 576px) {
 		height:116px;
+	}
+	@media (max-height: 500px) {
+		height: 86px;
 	}
 }
 
@@ -56,6 +63,10 @@
 	@media (min-width: 630px) {
 			font-size: 18px;
 		}
+
+	@media (max-height: 500px) {
+			font-size: 12px;
+		}	
 	
 }
 .container-fluid{
@@ -96,7 +107,9 @@
 	@media (max-height: 425px) {
 			padding-top: 45px;
 		}	
-		
+	@media (max-height: 500px) {
+			padding-top: 89px;
+		}	
 }
 
 
@@ -118,7 +131,7 @@
 			max-width: 100%;
 		}
 		li:first-child{
-			padding-left: 80vw;
+			padding-left: 50vw;
 		}
 		li:nth-child(2){
 			padding-top: @paddingtop;
@@ -151,6 +164,9 @@
 	padding-right: 0;
 	@media (min-width: 576px) {
 		margin-top: 100px;
+	}
+	@media (max-height: 500px) {
+		margin-top: 86px;
 	}
 }
 
@@ -295,9 +311,22 @@ h4{
 //tort
 
 
+
 .tort{
-	padding-top: 116px;
+	padding-top: 86px;
 	display: none;
+	@media (min-width: 576px) {
+		padding-top: 116px;
+	}
+}
+
+.name__order{
+	padding-top: 40px;
+	font-family: bravo;
+	background-color: @ligth;
+	h2{
+		font-size: 60px;
+	}
 	
 }
 
@@ -306,6 +335,7 @@ h4{
 }
 
 .card__item{
+	padding-top: 50px;
 	h4{
 		font-size: 40px;
 	}
@@ -439,21 +469,34 @@ h4{
 
 //cake
 .cake{
-	padding-top: 116px;
-	display: none;
+	.tort
 }
 
 
 //pie
 .pie{
-	padding-top: 116px;
-	display: none;
+	.tort
 }
 
 //map
 
-.map{
+.addre{
 	padding-top: 116px;
+}
+
+.addre__name{
+	background-color: @ligth;
+	h3{
+		font-size: 55px;
+	}
+	
+}
+
+.map{
+	padding-top: 86px;
+	@media (576px) {
+		padding-top: 116px;
+	}
 }
 
 .bg_cont--img{
@@ -465,6 +508,25 @@ h4{
 .bg_cont--color{
 	background-color: @dark;
 	padding: 40px 0 40px 0;
+	color: @mint;
+	font-family: bravo;
+	letter-spacing: 1.1px;
+	line-height: 32px;
+	
+		a{
+			color: @ligth;
+			font-size: 60px;
+			position: relative;
+			top: 30px;
+		}
+}
+.addre_item{
+	line-height: 47px;
+}
+
+
+.addre_taxt{
+	font-size: 30px;
 }
 
 .hr{
