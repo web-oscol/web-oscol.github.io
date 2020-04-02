@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.nav-link').on('click',function(e){
+	$('.clicid').on('click',function(e){
 		
 		 var cli = this.id
 		 
