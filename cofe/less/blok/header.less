@@ -1,0 +1,93 @@
+
+.bg{
+	min-height: 100%;
+    height: auto!important;
+   
+    margin: 0 auto -98px;
+    position: relative;
+    overflow: hidden;
+  }
+    
+ .bg::before{
+    content: "";
+    display: block;
+    width: 15000px;
+    height: 15000px;
+    border-radius: 15000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -7500px;
+    top: -14881px;
+    background: url(../img/bg/bg_header.jpg) center 0 repeat;
+    border: 0 solid rgba(0,0,0, 0.7);
+    z-index: 3;
+ } 
+
+ .bg::after{
+ 	content: "";
+    display: block;
+    width: 15022px;
+    height: 15022px;
+    border-radius: 15022px;
+    position: absolute;
+    left: 50%;
+    margin-left: -7511px;
+    top: -14892px;
+    
+    background: rgba(0,0,0, 0.7);
+    z-index: 1;
+
+ }  
+    
+       
+    
+	
+
+	
+
+
+.navigation{
+    position: relative;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px; 
+    text-align: center;
+    @media (min-width: 600px) {
+       width: 600px; 
+    }
+	
+	
+	
+};
+
+.logo{
+	
+	font-size: 20px;
+	letter-spacing: 1.8px;
+};
+.navi{
+	margin-top: 20px;
+    padding-left: 0;
+};
+.navi_li{
+	display: inline;
+	padding: 3%;
+	
+	
+
+	
+};
+.navi_li>a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+    &:hover{
+       color: #F6AF32;
+    }
+
+}
+
+.color{
+    color: #F6AF32!important;
+}
