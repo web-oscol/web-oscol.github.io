@@ -139,42 +139,71 @@
 }
 
 
+
+.card{
+	border: none;
+}
+.card-header{
+	background-color: #fff;
+	border-bottom: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.tabl{
+	width: 1200px;
+}
+
 .tabl_num{
 	width: 51px;
-	height: 51px;
-	color: #39bde3; 
-  	font-size: 36px;
-  	box-shadow: 0px 5px 18px 0 rgba(39, 104, 146, 0.15);
-  	  
+  height: 51px;
+  box-shadow: 0px 5px 18px 0 rgba(39, 104, 146, 0.15);
+  font-family: Souses;
+  font-size: 36px;
+  line-height: 0.67;
+  text-align: center;
+  color: #39bde3;
+  padding-top: 13px;
+  margin-right:10px;
 }
 
-.tabl_textAll{
-	width: 1111px;
-	height: 51px;
-	border-radius: 3px;
-	box-shadow: 0px 5px 18px 0 rgba(39, 104, 146, 0.15);
-	margin-left: 10px;
-	padding-left: 25px;
+.btn-tabl{
+width: 1111px;
+  height: 51px;
+  border-radius: 3px;
+  box-shadow: 0px 5px 18px 0 rgba(39, 104, 146, 0.15);
+  background-color: #fff;
   
-}
-
-.tabl_item{
-	margin-top: 20px;
-}
-.tabl_text{
-	color: #222222;
+  color: #222222;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0em;
   font-family: myriadpro-regular;
   font-size: 20px;
   font-weight: 600;
-  }
-
-.btn_table{
-	float: right;
-	background-color: transparent;
+  padding: 1px 6px;
+  border-width: none;
+  border-style: none;
+  border-color: none;
+   
 
 }
 
-.card-body{
-	border: none;
-	transition: 1s;
+.btnleft{
+	float: right;
+	transform: rotate(0deg);
+		transition: 1s;
+}
+
+.acti{
+	color: @blue;
+		span{
+		transform: rotate(90deg);
+		transition: 1s;
+		}
+}
+
+.actinum{
+	background-color: @blue;
+	color: #fff;
 }
