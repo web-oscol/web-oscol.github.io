@@ -10,7 +10,7 @@
 	width: 45px;
 	height: 45px;
 	margin-left:15px;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .open{
@@ -23,22 +23,23 @@
 
 .open__name{
 	
-	font-size: 12px;
+	font-size: 14px;
+    color: #adb4bf;
 
 }
 
 .data{
 	font-size: 18px;
 	text-align: center;
-	margin-left: 150px;
-	margin-right: 140px;
+	margin-left: 140px;
+	margin-right: 130px;
 	color: #388ec3;
 
 }
 
 .data__offers{
-	font-size: 12px;
-	color: #000;
+	font-size: 14px;
+    color: #adb4bf;
 }
 
 .btntincov{
