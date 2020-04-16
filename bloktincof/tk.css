@@ -3,7 +3,7 @@
 	width: 992px;
 	border-radius: 4px;
 	border: 1px solid #EAEAEA;
-	justify-content: space-between;
+	
 }
 
 .imgsvglogo{
@@ -14,7 +14,7 @@
 }
 
 .open{
-	
+	margin-left: 20px;
 }
 .open__offers{
 	font-size: 18px;
@@ -22,20 +22,39 @@
 }
 
 .open__name{
-	text-align: center;
-	font-size: 10px;
+	
+	font-size: 12px;
 
 }
 
 .data{
 	font-size: 18px;
 	text-align: center;
-	margin-right: 10px;
+	margin-left: 150px;
+	margin-right: 140px;
 	color: #388ec3;
 
 }
 
 .data__offers{
-	font-size: 10px;
+	font-size: 12px;
 	color: #000;
+}
+
+.btntincov{
+	width: 150px;
+	height: 35px;
+	background-color: #95ce5a;
+    color: #fff;
+    border-color: #95ce5a;
+    box-shadow: 0 7px 10px rgba(149,206,90,.4);
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-right: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+
+
+
 }
