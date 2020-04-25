@@ -3,18 +3,18 @@
 	width: 992px;
 	border-radius: 4px;
 	border: 1px solid #EAEAEA;
-	justify-content: space-between;
+	
 }
 
 .imgsvglogo{
-	width: 50px;
-	height: 50px;
-	margin-left:10px;
-	padding-top: 10px;
+	width: 45px;
+	height: 45px;
+	margin-left:15px;
+	padding-top: 20px;
 }
 
 .open{
-	
+	margin-left: 20px;
 }
 .open__offers{
 	font-size: 18px;
@@ -22,20 +22,40 @@
 }
 
 .open__name{
-	text-align: center;
-	font-size: 10px;
+	
+	font-size: 14px;
+    color: #adb4bf;
 
 }
 
 .data{
 	font-size: 18px;
 	text-align: center;
-	margin-right: 10px;
+	margin-left: 140px;
+	margin-right: 130px;
 	color: #388ec3;
 
 }
 
 .data__offers{
-	font-size: 10px;
-	color: #000;
+	font-size: 14px;
+    color: #adb4bf;
+}
+
+.btntincov{
+	width: 150px;
+	height: 35px;
+	background-color: #95ce5a;
+    color: #fff;
+    border-color: #95ce5a;
+    box-shadow: 0 7px 10px rgba(149,206,90,.4);
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-left: 60px;
+    padding-top: 10px;
+    text-decoration: none;
+
+
+
 }
