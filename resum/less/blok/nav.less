@@ -1,0 +1,177 @@
+.nav_bg{
+
+background: #191d2b;
+height: 100vh;
+border-right: 4px solid #2e344e;
+transform-origin: 0% 0%;
+transform:scale(1.0) rotateY(-90deg) ;
+
+perspective: 0;
+transition: 1s;
+width: 122px;
+z-index: 9;
+
+position: fixed;
+@media (min-width: 768px) {
+
+width: 350px;
+transform-origin: 0% 0%;
+transform:scale(1.0) rotateY(0deg); 
+	perspective: 500;
+}
+}
+
+.navtrans{
+	height: 100vh;
+	width: 60px;
+	border-left: 4px solid #2e344e;
+	border-right:  4px solid #2e344e;
+	background: #191d2b;
+	position: fixed;
+	
+	transform-origin: 0% 0%;
+	transform:scale(1.0) rotateY(0deg);
+	perspective: 0;
+	transition: 1s;
+	//transform: translateX(-125px); 
+	
+	 
+	@media (min-width: 768px) {
+		position: absolute;
+		transform-origin: 0% 0%;
+		transform:scale(1.0) rotateY(-90deg) ; 
+		perspective: 900;
+
+}
+}
+
+.nvactiv{
+	transform-origin: 0% 0%;
+	transform:scale(1.0) rotateY(0deg); 
+	perspective: 500;
+	z-index: 9;
+}
+
+.nvtact{
+	position: relative;
+	transform-origin: 0% 0%;
+	transform:scale(1.0) rotateY(-90deg) ; 
+	perspective: 900;
+	z-index: 9;
+}
+
+
+
+
+
+
+.nav_mee{
+	position: absolute;
+	top: 0;
+	height: 25vh;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #2e344e;
+	@media (min-height:870px) {
+		top: 40px;
+	}
+
+
+}
+.nav-ul{
+	height: 40vh;
+	perspective: 300px;
+}
+
+.navbar-brand{
+
+
+}
+
+.nav_mee-img{
+	width: 90px;
+	height: 90px;
+	border-radius: 90px; 
+	border:3px solid #2e344e;
+	position: absolute;
+	left: calc(50% - 45px);
+	@media (min-width: 1200px) {
+	width: 190px;
+	height: 190px;
+	border-radius: 190px; 
+	border:7px solid #2e344e;
+	position: absolute;
+	left: calc(50% - 95px);
+	}
+	
+
+
+}
+
+.nav-item{
+	a{
+	&:before{
+		content: "";
+    	left: -100%;
+    	height: 15px;
+    	margin-top: -9px;
+    	width: 100%;
+    	background: rgba(3,127,255,.3);
+        
+	}
+
+	&:hover{
+
+
+			&:before{
+	content: "";
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    transition: 1s;
+
+    
+    
+	}
+	}
+	}
+	
+}
+
+.nav-link{
+	text-transform: uppercase;
+	color: @fontcolor;
+	letter-spacing: 2px;
+	&:hover{
+		color: #fff;
+	}
+
+}
+
+
+
+.activnav{
+	background-color: #037fff;
+}
+.nav-copirate{
+	position: absolute;
+	bottom: 20px;
+	border-top: 2px solid #2e344e;
+}
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+

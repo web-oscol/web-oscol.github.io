@@ -1,0 +1,141 @@
+.skils-bg{
+ .mee-bg();
+}
+
+.skils-all{
+	margin-top: 20vh;
+	position: relative;
+	
+		&:before{
+			content: '';
+			position: absolute;
+			top: 60px;
+			background-color: @blue;
+			width: 80px;
+			height: 4px;
+			float: left;
+			border-radius: 3px;
+			box-shadow: 59px 0px 0px 0px rgba(3,127,255,.3);
+			z-index: 3;
+
+		}
+	
+}	
+	
+	
+
+.skils-mee{
+	.mee-about();
+	&:before{
+		content: 'Мои навыки';
+	}
+}
+
+.skils-procent{
+	margin-top: 120px;
+}
+
+.skils-procent-item{
+	position: relative;
+}
+.skils-procent-itemtext{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 5px;
+
+}
+.skils-procent-itemnum{
+	font-size: 18px;
+	color: @fontcolor;
+}
+.line{
+	width: 150px;
+	height: 5px;
+	background-color: #fff;
+	position: absolute;
+	top: 48px;
+	left: 60px;
+	transition:3s;
+	overflow: hidden;
+		@media (min-width: 670px) {
+			width: 220px;
+		}
+	
+	
+
+	
+}
+
+.lineback{
+	transition: 1s;
+	display: flex;
+	width: 150px;
+	height: 5px;
+	background-color: @blue;
+	transform: translate(-100%);
+		@media (min-width: 670px) {
+			width: 220px;
+		}
+}
+
+.mee-resume{
+	.skils-all();
+}
+
+.skils-mee-resume{
+	.mee-about();
+	&:before{
+		content: 'Резюме';
+	}
+}
+
+.mee-resume-text{
+	margin-top: 120px;
+	font-size: 30px;
+	color: @fontcolor;
+}
+
+.mee-resume-work{
+	border-left: 2px solid #2e344e;
+}
+
+.mee-resume-year{
+	font-size: 20px;
+	color: @fontcolor;
+		&:before{
+			content: " ";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: #2e344e;
+			border-radius: 16px;
+			left: -26px;
+			top: 5px;
+
+		}
+
+		&:after{
+		content: " ";
+    	position: absolute;
+    	width: 11px;
+    	height: 11px;
+    	background-color: #10121B;
+    	border-radius: 8px;
+    	left: -22px;
+    	top: 10px;
+		}
+}
+
+
+.mee-head{
+	color: #037fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+.mee-smallhead{
+	color: #fff;
+	font-size: 13px;
+}
+.mee-text{
+	color: @fontcolor;
+}

@@ -1,0 +1,313 @@
+.mee-bg{
+	
+	background-color:#10121B;
+	//margin-left: 60px;
+	transition: 1s;
+	position: absolute;
+	@media (min-width: 768px) {
+		//margin-left: 350px;
+	}
+
+.mee-all{
+	margin-top: 20vh;
+	position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 60px;
+			background-color: @blue;
+			width: 80px;
+			height: 4px;
+			float: left;
+			border-radius: 3px;
+			box-shadow: 59px 0px 0px 0px rgba(3,127,255,.3);
+			z-index: 3;
+
+		}
+	
+}	
+
+
+}
+
+.mee-about{
+	position: relative;
+	color: #fff;
+	&:before{
+		content: ' Обо мне';
+		position: absolute;
+		top: 29px;
+		font-size: 50px;
+		color: rgba(164,172,196,0.1);
+		letter-spacing: 8px;
+		@media (min-width: 500px) {
+			top: 10px;
+			font-size: 100px;
+		}
+
+	}
+}
+
+
+.mee-info{
+	margin-top: 120px;
+	color: #a4acc4;
+}
+
+.mee-info--img{
+
+	img{
+		
+
+	}
+}
+.mee-info--text{
+	overflow: hidden;
+}
+
+.me-info--soc{
+	position: relative;
+	top: 40px;
+	
+	width: 135px;
+	color: #fff;
+	background-color: @blue;
+	padding:10px 15px ;
+	text-decoration: none!important;
+	
+	&:before{
+
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				background-color: #fff;
+				top: 40px;
+				left: 0px;
+				transform: translateX(-100%);
+				transition: 1s;
+				opacity:0 ;
+				
+			}
+		&:hover{
+			box-shadow: 0px 0px 10px 2px rgba(3,127,255,0.68);
+			color: #fff;
+			&:before{
+				transform: translateX(0);
+				opacity: 1;
+
+			}
+		}
+
+}
+
+.mee-about--servese{
+	.mee-about();
+	&:before{
+		content: ' Услуги';
+	}
+
+
+}
+.mee-card{
+	margin-top: 120px;
+	margin-bottom: 100px;
+	
+
+	
+}
+
+
+
+/* весь контейнер поддерживает перспективу */
+.flip-container {
+ perspective: 1000;
+}
+ /* переверните сторону при проведении мышью */
+ .flip-container:hover .flipper, .flip-container.hover .flipper {
+ transform: rotateY(180deg);
+ }
+ 
+.flip-container, .front, .back {
+	
+	margin-bottom: 10px;
+		width: 240px;
+ 	height: 460px;
+	@media (min-width: 380px) {
+		margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+ 	height: 400px;
+	}
+	
+	@media (min-width: 992px) {
+		width: 250px;
+ 	height: 460px;
+	}
+ 	
+ 	@media (min-width: 1200px) {
+ 		width: 320px;
+ 		height: 400px;
+ 	}
+}
+ 
+/* здесь находится скорость перевертывания */
+.flipper {
+ transition: 1s;
+ transform-style: preserve-3d;
+ perspective: 400px;
+ position: relative;
+}
+ 
+/* скройте обратную сторону во время переворота */
+.front, .back {
+ backface-visibility: hidden;
+ border: 2px solid #2e344e;
+ border-top: 5px solid #2e344e;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: #191d2b;
+border-radius: 0;
+color: @fontcolor;
+	
+	transition: 0.5s;
+		&:hover{
+			border-top: 5px solid @blue;
+			hr{
+				background-color:@blue ;
+
+			}
+
+		}
+		hr{
+			background-color:#2e344e ;
+			transition: 0.5s;
+			
+
+		}
+}
+ 
+/* лицевая сторона размещена над обратной */
+.front {
+ z-index: 2;
+}
+ 
+/* обратная, изначально скрытая сторона */
+.back {
+ background: #DA2F3F;
+ transform: rotateY(180deg);
+
+}
+
+
+.cardtext{
+	transform: translate3d(0, 0, 60px) scale(0.7);
+}
+
+.cardtextback{
+	margin-top: 20px;
+	transform: translate3d(0, 0, 60px) scale(1);
+}
+
+
+.card-body{
+	perspective: 550px;
+	transform-style: inherit;
+	h5{
+		
+		margin-top: 20px;
+		font-size: 25px;
+		margin-bottom: 20px;
+		
+		text-shadow: 0px 0px 9px #CE5937;
+	}
+
+	img{
+		width: 50px;
+
+	}
+	
+}
+
+
+
+.mee-about--review{
+	.mee-about();
+	&:before{
+		content: ' Отзывы';
+	}
+}
+
+.winwitn{
+
+	overflow: hidden;
+}
+
+.mee-review-slide{
+	margin-top: 120px;
+	margin-bottom: 120px;
+	transition: 1s;
+	
+
+}
+
+.mee-review-item{
+	
+
+}
+.mee-review-text{
+	background-color: #191d2b;
+	padding: 3px;
+	color: @fontcolor;
+	font-size: 10px;
+	
+	border-left: 5px solid #2e344e ;
+	
+		&:before{
+			    		
+    		@media (min-width: 460px) {
+    			content: "";
+    		position: absolute;
+    		left: 30px;
+    		top: 120px;
+    		border-color: #191d2b transparent transparent #191d2b;
+    		border-style: solid;
+    		border-width: 12px;
+    		}
+		}
+		@media (min-width: 460px) {
+			padding: 25px;
+			font-size: 16px;
+
+		}
+}
+
+.mee-review-name{
+	margin-top: 40px;
+	color: @fontcolor;
+	font-size: 25px;
+}
+
+.hrone{
+	position: absolute;
+	background-color:rgba(25,29,43,0.3);
+	width: 2px;
+	top: -15px;
+	min-height: 99%;
+	margin-left: 20%;
+
+	
+}
+.hrtwo{
+	.hrone();
+	margin-left: 40%;
+}
+.hrthre{
+	.hrone();
+	margin-left: 60%;
+}
+.hrfive{
+	.hrone();
+	margin-left: 80%;
+}
