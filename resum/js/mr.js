@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var ws  = window.innerWidth
 	if (ws>=768) {
 		var	h = $('#nw').width();
-		var hp = h - 10;
+		var hp = h;
 		$('.mrmy').css({'margin-left' : hp} );
 	}else{
 		$('.mrmy').css({'margin-left' : 60 } );
