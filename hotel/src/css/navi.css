@@ -1,0 +1,90 @@
+.mynav {
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 94px;
+  padding-right: 94px;
+}
+.my-nav-addres {
+  padding-top: 5px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+}
+.mynav-work-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mynav-work-time p {
+  margin-right: 15px;
+}
+.my-nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.my-nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  right: 53px;
+}
+.my-nav-ul > li {
+  widows: 85px;
+  margin-right: 27px;
+  margin-left: 27px;
+}
+.my-nav-call {
+  line-height: 5px;
+  letter-spacing: 1px;
+}
+.my-nav-call-back {
+  text-decoration: underline;
+  padding-left: 35px;
+  font-size: 10px;
+}
+.fa-vk,
+.fa-instagram {
+  font-size: 18px;
+  margin-right: 25px;
+}
+.lang-flag {
+  width: 15px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.transdropdownMenu {
+  margin-right: 5px;
+  margin-left: 5px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.my-nav-addres-lang {
+  margin-left: 10px;
+}
+.my-nav-addres-lang a {
+  text-decoration: none;
+}
+.dropdown a {
+  text-decoration: none;
+}
+hr {
+  position: relative;
+  width: 1400px;
+  right: 100px;
+}
+
+/*# sourceMappingURL=maps/navi.css.map */
