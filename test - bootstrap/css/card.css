@@ -1,0 +1,45 @@
+.card_all {
+  margin-top: 59px;
+}
+@media (min-width: 768px) {
+  .card_all {
+    height: calc(100vh - 357px);
+  }
+}
+.card_gred {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card_item {
+  margin-bottom: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+}
+.card_item h3 {
+  position: relative;
+  top: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 35px;
+}
+.card_item p {
+  position: relative;
+  top: 9px;
+  color: #717171;
+}
+.card_item a {
+  text-decoration: none;
+  color: #F58220;
+}
+.card_item a:hover {
+  color: #0745ca;
+}
+.card_item a:hover .svg_vekt {
+  fill: #0745ca;
+}
+.svg_vekt {
+  fill: #F58220;
+}
+
+/*# sourceMappingURL=maps/card.css.map */

@@ -1,0 +1,26 @@
+.footer_test {
+  height: 200px;
+  background: #F3F3F3;
+}
+.fuuter_test_ul {
+  padding: 0;
+  margin-left: 130px;
+  list-style-type: none;
+  padding-top: 37px;
+}
+.fuuter_test_ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fuuter_test_ul a {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  color: #727272;
+}
+.fuuter_test_ul a span {
+  position: relative;
+  bottom: 8px;
+}
+
+/*# sourceMappingURL=maps/footer.css.map */
